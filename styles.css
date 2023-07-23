@@ -1,0 +1,120 @@
+/* Some default styles for better consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* Styles for the navbar */
+nav {
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 200px 30px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow for visibility */
+}
+
+#contact {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #800080;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+}
+
+#contact:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li:first-child {
+  margin-left: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: slateblue;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f0f0f0;
+}
+
+.logo img {
+  max-width: 100px;
+
+}
+
+.container{
+  height: 100%;
+  background: linear-gradient(to right, #800080, #FFFF00);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+/* Styles for the header text animation */
+@keyframes headerTextChange {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-animation {
+  display: inline-block;
+  position: relative;
+  animation: headerTextChange 6s infinite;
+}
+
+/* Prevent flickering of the animation on first load */
+.header-animation:before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
