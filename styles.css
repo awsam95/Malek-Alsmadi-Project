@@ -8,6 +8,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
+  
 }
 
 /* Styles for the transparent navbar */
@@ -30,7 +31,7 @@ nav.scrolled {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adjust the shadow when scrolled */
 }
 
-button{
+.contact{
   padding: 10px 20px;
   background-color: #fff;
   color: #800080;
@@ -44,6 +45,7 @@ button{
 
 .contact:hover {
   background-color: #f0f0f0;
+  transform: scale(1.1);
 }
 
 .nav-links {
@@ -65,6 +67,7 @@ button{
   font-weight: 600;
   font-size: 16px;
   transition: color 0.3s ease;
+  letter-spacing: 10px;
 }
 
 .nav-links a:hover {
@@ -95,6 +98,7 @@ button{
 
   .logo img {
     max-width: 80px; /* Reduce logo size on smaller screens */
+    transform: rotateY(30deg) translateZ(50px); /* Adjust the rotation and translation values */
   }
 
   /* Show the navigation links in a mobile menu */
@@ -138,7 +142,7 @@ header p{
   color: wheat;
 }
 
-.buttons-container {
+.buttons-container1 {
   padding: 20px;
   
 }
@@ -212,4 +216,147 @@ button svg {
   .buttons-container {
     padding-top: 20px; /* Add some spacing between the text and buttons */
   }
+}
+
+.break{
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(to top, #eaecd357,#80008059);
+}
+
+.break2{
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(to top, #80008059, #eaecd357);
+}
+
+/* Styles for the slider section */
+.slider-section {
+  padding: 80px 50px 50px 50px;
+  background: whitesmoke;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles for the slider container */
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+  height: 300px;
+  width: 857px; 
+  border-radius: 20px;
+  position: relative;
+}
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease; /* Add smooth sliding transition */
+  padding: 20px;
+}
+
+
+/* Styles for the slider cards */
+.slider-card {
+  height: 250px; /* Set the height of each card in the slider */
+  width: 400px; /* Set the width of each card in the slider */
+  background-color: #E6C7B9; /* Optional background color for the cards */
+  border-radius: 10px;
+  margin: 10px; /* Add some space between the cards */
+  cursor: pointer;
+  transition: transform 0.5s ease; /* Add a smooth transition on hover */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  border: 4px solid #E6C7B9; 
+}
+
+
+/* Activate the card on hover */
+.slider-card:hover {
+  transform: scale(1.1); /* Enlarge the card on hover */
+  background: wheat;
+  border-radius: 10px;
+}
+
+/* Styles for the slider cards' heading */
+.slider-card h2 {
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* Styles for the slider cards' paragraph */
+.slider-card p {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Styles for the slider cards' image */
+.slider-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #58769793;
+}
+
+
+/* Styles for the slider navigation buttons */
+.slider-button {
+  /* transform: translateY(-50%); */
+  padding: 10px 20px;
+  background-color:#58769793;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 540;
+  border-radius: 20px;
+}
+
+.slider-button:hover{
+  transform: scale(1.1);
+}
+.buttons-container2{
+position: absolute;
+top: 0;
+right: 10%;
+padding: 20px;
+}
+
+#programs{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position:absolute;
+  top: 0;
+  left: 0;
+  padding-left: 100px;
+  padding-top: 20px;
+
+}
+
+#programs p{
+  padding-left: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 34px;
+  color: #9f01cf93
+}
+
+#programs img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid #58769793; 
 }
