@@ -265,7 +265,7 @@ button svg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 4px solid #E6C7B9;
+  border: 4px solid #f0e0fa;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -311,7 +311,6 @@ button svg {
 
 /* Styles for the slider navigation buttons */
 .slider-button {
-  /* transform: translateY(-50%); */
   padding: 10px 20px;
   background-color:#800080;
   color: #fff;
@@ -557,66 +556,90 @@ padding: 20px;
 /* Scrollbar styling  */
 
 .section-five {
-  display: flex;
   padding: 50px;
+  position: relative;
 }
 
-.slider-wrapper2 {
+#wrapper-div{
   display: flex;
+  align-items:center ;
+  justify-content: center;
+}
+
+#intro-nav{
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  transition: transform 0.3s ease; 
-} 
+  width: 50%;
+  height: 300px;
+  top: 0;
+}
+
+#intro-nav img{
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  border: 3px solid #dcb3f3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#intro-nav h3{
+  font-size: 24px;
+  color: #800080;
+  margin-left: 20px;
+}
+
+#intro-nav p{
+  color: #957d9c;
+  font-weight: 300;
+}
 
 #navbar {
-  display: grid;
-  min-width: 290px;
-  top: 0;
-  left: 0;
-  width: 1000px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   border-color: rgba(0, 22, 22, 0.4);
   background-color: transparent; 
-  padding: 20px;
+  padding-right: 20px;
   overflow-y:scroll;
-}
-
-#navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 #navbar li {
   color: #4d4e53;
-  border-top: 1px solid #e0e0e0; /* Adjust border color for better visibility */
   padding: 10px 30px;
+  background: #fff6ffb9;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 3px solid #f0e0fa;
+}
+
+#navbar li img{
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+  margin-right: 30px;
+  border: 3px solid #fff;
+
 }
 
 #navbar a {
   display: block;
-  color: #4d4e53;
+  color: #957d9c;
   text-decoration: none;
   cursor: pointer;
 }
 
-#navbar a:hover {
+#navbar li:hover {
   background-color: #ddd;
+  transition: background-color 0.4s ease;
 }
 
-#slider {
-  color: black;
-  margin: 5%;
-  text-align: center;
-  font-size: 24px;
-  font-weight: thin;
-}
 
-#main-doc {
-  position: relative;
-  padding: 20px;
-}
-
-section article {
+#wrapper-div p {
   color: #4d4e53;
   margin: 15px;
   font-size: 0.96em;
