@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
   // Get the navbar element
   const navbar = document.querySelector('nav');
 
@@ -6,6 +7,7 @@
     if (window.scrollY > 50) {
       // Add a class to the navbar when scrolling down
       navbar.classList.add('scrolled');
+      console.log('Scrolling...');
     } else {
       // Remove the class when at the top of the page
       navbar.classList.remove('scrolled');
@@ -14,6 +16,8 @@
 
   // Attach the scroll event listener
   window.addEventListener('scroll', handleScroll);
+});
+
 
 
 

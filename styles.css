@@ -221,19 +221,13 @@ button svg {
 .break{
   height: 50px;
   width: 100%;
-  background: linear-gradient(to top, #eaecd357,#80008059);
-}
-
-.break2{
-  height: 50px;
-  width: 100%;
-  background: linear-gradient(to top, #80008059, #eaecd357);
+  background: linear-gradient(to top,  #fff,#80008025);
 }
 
 /* Styles for the slider section */
 .slider-section {
   padding: 80px 50px 50px 50px;
-  background: whitesmoke;
+  background: #fff;
   position: relative;
   display: flex;
   align-items: center;
@@ -263,19 +257,20 @@ button svg {
 
 /* Styles for the slider cards */
 .slider-card {
-  height: 250px; /* Set the height of each card in the slider */
-  width: 400px; /* Set the width of each card in the slider */
-  background-color: #E6C7B9; /* Optional background color for the cards */
-  border-radius: 10px;
-  margin: 10px; /* Add some space between the cards */
+  height: 250px; 
+  width: 400px; 
+  margin: 10px; 
   cursor: pointer;
-  transition: transform 0.5s ease; /* Add a smooth transition on hover */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
-  border: 4px solid #E6C7B9; 
+  border: 4px solid #E6C7B9;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease; 
 }
 
 
@@ -287,20 +282,20 @@ button svg {
 }
 
 /* Styles for the slider cards' heading */
-.slider-card h2 {
-  font-size: 28px;
-  color: rgb(255, 255, 255);
+.slider-card h3 {
+  font-size: 24px;
+  color: #800080;
   margin-bottom: 10px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 /* Styles for the slider cards' paragraph */
 .slider-card p {
-  font-size: 14px;
-  color: #777;
+  font-size: 16px;
+  color: #555;
   text-align: center;
   margin-bottom: 20px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* Styles for the slider cards' image */
@@ -308,7 +303,9 @@ button svg {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 4px solid #58769793;
+  margin-bottom: 20px;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -316,7 +313,7 @@ button svg {
 .slider-button {
   /* transform: translateY(-50%); */
   padding: 10px 20px;
-  background-color:#58769793;
+  background-color:#800080;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -351,12 +348,208 @@ padding: 20px;
   padding-left: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 34px;
-  color: #9f01cf93
+  color: #800080
 }
 
 #programs img{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 4px solid #58769793; 
+  border: 4px solid #58769793;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .slider-container {
+    max-width: 500px; 
+  }
+  .slider-card {
+    width: 300px; 
+  }
+  #programs p {
+    font-size: 20px; 
+  }
+  #programs img {
+    width: 30px; 
+    height: 30px; 
+  }
+}
+
+.info-section {
+  padding: 50px 0;
+}
+
+.info-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.intro {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.intro img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+  font-size: 32px;
+  color: #800080;
+  margin: 20px 0;
+}
+
+.intro p {
+  font-size: 18px;
+  color: #555;
+}
+
+.boxes-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.first-half {
+  flex-basis: 50%;
+}
+
+.box {
+  flex-basis: 45%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box h3 {
+  font-size: 24px;
+  color: #800080;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 16px;
+  color: #555;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.bottom-image {
+  flex-basis: 45%;
+  text-align: right;
+  margin-top: 300px;
+}
+
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .first-half,
+  .bottom-image {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .box {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+
+/* CSS styles for the "Get Started With Eatly" section */
+.get-started {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.get-started-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.get-started-image {
+  flex-basis: 45%;
+  text-align: center;
+}
+
+.get-started-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.get-started-content {
+  flex-basis: 50%;
+  text-align: left;
+}
+
+.get-started h2 {
+  font-size: 32px;
+  color: #800080;
+  margin-bottom: 20px;
+}
+
+.get-started p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.get-started-button {
+  padding: 12px 24px;
+  background-color: #800080;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #700070;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .get-started-container {
+    flex-direction: column;
+  }
+
+  .get-started-image,
+  .get-started-content {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .get-started-image {
+    margin-bottom: 30px;
+  }
 }
