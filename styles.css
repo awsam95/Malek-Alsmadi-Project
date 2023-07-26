@@ -478,7 +478,7 @@ padding: 20px;
 }
 
 
-/* CSS styles for the "Get Started With Eatly" section */
+/* styles for the "Get Started With Eatly" section */
 .get-started {
   background-color: #f9f9f9;
   padding: 50px 0;
@@ -552,4 +552,91 @@ padding: 20px;
   .get-started-image {
     margin-bottom: 30px;
   }
+}
+
+/* Scrollbar styling  */
+
+.section-five {
+  display: flex;
+  padding: 50px;
+}
+
+.slider-wrapper2 {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease; 
+} 
+
+#navbar {
+  display: grid;
+  min-width: 290px;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  height: 500px;
+  border-color: rgba(0, 22, 22, 0.4);
+  background-color: transparent; 
+  padding: 20px;
+  overflow-y:scroll;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid #e0e0e0; /* Adjust border color for better visibility */
+  padding: 10px 30px;
+}
+
+#navbar a {
+  display: block;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+}
+
+#slider {
+  color: black;
+  margin: 5%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: thin;
+}
+
+#main-doc {
+  position: relative;
+  padding: 20px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0 0 20px;
+}
+
+
+/* WebKit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #700070;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ddbcdd;
 }
