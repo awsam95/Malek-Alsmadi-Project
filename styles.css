@@ -726,7 +726,6 @@ button svg {
 .slider-card2:hover {
   transform: scale(1.1);
   background: whitesmoke;
-  border-radius: 10px;
 }
 
 /* Styling for the slider cards' heading */
@@ -750,4 +749,103 @@ button svg {
   border-radius: 50% 50% 10% 10%;
   border: 4px solid #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for Section Six */
+.section-six {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+/* Styling for the image on the left */
+.image-6 {
+  width: 50%;
+  height: 100%;
+}
+ 
+.image-6 img{
+  margin-left: 100px;
+}
+
+/* Styling for the content on the right */
+.content-wrapper {
+  flex: 1;
+  /* margin-left: 50px; */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Styling for the intro-nav section */
+#intro-nav2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+#intro-nav2 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #dcb3f3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#intro-nav2 h3 {
+  font-size: 24px;
+  color: #800080;
+  margin: 20px 0;
+}
+
+#intro-nav2 p {
+  color: #957d9c;
+  font-weight: 300;
+}
+
+/* Styling for the testimonial slider */
+.testimonial-slider {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 5000px;
+  /* flex-wrap: wrap; */
+}
+
+.testimonial {
+  width: 600px;
+  height: 400px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: scale(1.1);
+  /* Enlarge the card on hover */
+  background: wheat;
+  border-radius: 10px;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial h3 {
+  font-size: 18px;
+  color: #800080;
+  margin-bottom: 10px;
+}
+
+.testimonial p {
+  font-size: 14px;
+  color: #555;
+  font-weight: 400;
 }
