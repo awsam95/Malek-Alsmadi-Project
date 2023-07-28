@@ -61,7 +61,19 @@ function updateSliderPosition() {
 }
 
 
+  // Function to handle smooth scrolling when clicking on navigation links
+  function smoothScroll(target) {
+    document.querySelector(target).scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
 
-
-
-
+  // Attach an event listener to each navigation link to handle smooth scrolling
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault(); // Prevent default link behavior
+      const target = link.getAttribute('href'); // Get the target section ID
+      smoothScroll(target); // Call the smoothScroll function with the target ID
+    });
+  });
