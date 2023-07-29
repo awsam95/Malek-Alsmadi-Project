@@ -436,6 +436,7 @@ button svg {
   transition: transform 0.3s ease;
 }
 
+
 .box img {
   width: 100px;
   height: 100px;
@@ -764,6 +765,30 @@ button svg {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 767px) {
+  .section-five {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  #intro-nav {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #navbar {
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  .column2 {
+    margin-top: 20px;
+  }
+  .slider-wrapper2 {
+    width: 100%;
+  }
+}
+
+
 /* Styling for Section Six */
 .section-six {
   display: flex;
@@ -900,6 +925,28 @@ button svg {
   font-size: medium;
 }
 
+@media screen and (max-width: 768px) {
+  .section-six {
+    flex-direction: column; /* Stack the elements in a column on smaller screens */
+  }
+
+  .image-6,
+  .content-wrapper {
+    width: 100%; /* Set the width of both columns to 100% on smaller screens */
+  }
+
+  .testimonial-slider {
+    display: flex;
+    height: auto; /* Adjust the height based on the content */
+  }
+
+  .testimonial {
+    width: 100%; /* Set the width of each testimonial to 100% on smaller screens */
+    max-width: none; /* Remove the maximum width */
+  }
+}
+
+
 /* Style for the footer */
 
   .site-footer {
@@ -937,6 +984,7 @@ button svg {
   .widget-title {
     font-size: 20px;
     font-weight: bold;
+    color: #1fe2d2;
     margin-bottom: 15px;
   }
   .quick-links ul {
