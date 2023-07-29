@@ -39,7 +39,7 @@ setInterval(toggleHeaderText, 5000);
 const sliderWrapper = document.querySelector('.slider-wrapper');
 const prevButton = document.querySelector('#prev-button');
 const nextButton = document.querySelector('#next-button');
-const cardWidth = 400 + 20; // Width of each card including the margin (showing 2 cards at a time)
+const cardWidth = 400 + 30; // Width of each card including the margin (showing 2 cards at a time)
 const totalCards = sliderWrapper.children.length;
 const maxIndex = Math.ceil(totalCards / 2) - 1; // Maximum index for the last visible card set
 
@@ -77,3 +77,31 @@ function updateSliderPosition() {
       smoothScroll(target); // Call the smoothScroll function with the target ID
     });
   });
+
+
+
+// JavaScript to handle slider navigation
+const sliderWrapper3 = document.querySelector('.testimonial-slider');
+const prevButton3 = document.querySelector('#prev-button3');
+const nextButton3 = document.querySelector('#next-button3');
+const cardWidth3 = 800 + 30; // Width of each card including the margin (showing 2 cards at a time)
+const totalCards3 = sliderWrapper3.children.length;
+const maxIndex3 = Math.ceil(totalCards3 / 2) - 1; // Maximum index for the last visible card set
+
+let currentIndex3 = 0; // Current index of the first visible card
+
+prevButton3.addEventListener('click', () => {
+  currentIndex3 = Math.max(currentIndex3 - 1, 0);
+  updateSliderPosition();
+});
+
+nextButton3.addEventListener('click', () => {
+  currentIndex3 = Math.min(currentIndex3 + 1, maxIndex3);
+  updateSliderPosition();
+});
+
+function updateSliderPosition() {
+  const translateXValue = -currentIndex3 * (cardWidth3 * 2); // Move 2 cards at a time
+  sliderWrapper3.style.transform = `translateX(${translateXValue}px)`;
+}
+
